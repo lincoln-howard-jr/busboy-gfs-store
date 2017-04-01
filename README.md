@@ -15,7 +15,7 @@ Before inserting MPBP into your routes, pass it your mongoose instance:
 
 File uploads are attached to req.body by their ObjectId in mongo.
 ```javascript
-  app.post ('/post', multipart, (req, res) => {
+  app.post ('/posts', multipart, (req, res) => {
     console.log (req.body.image)
     // ex: 58bf4befda5b5381c006f165
   });

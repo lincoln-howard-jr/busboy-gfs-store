@@ -1,0 +1,26 @@
+{
+  "name": "busboy-gfs-store",
+  "version": "1.0.0",
+  "description": "Express multipart body parser using mongo gridfs to store file uploads. Edit",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lincoln-howard-jr/busboy-gfs-store.git"
+  },
+  "keywords": [
+    "multipart",
+    "upload",
+    "body",
+    "parser"
+  ],
+  "author": "Lincoln Howard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lincoln-howard-jr/busboy-gfs-store/issues"
+  },
+  "homepage": "https://github.com/lincoln-howard-jr/busboy-gfs-store#readme",
+  "dependencies": {
+    "busboy": "^0.2.14",
+    "gridfs-stream": "^1.1.1"
+  }
+}
