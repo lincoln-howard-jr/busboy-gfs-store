@@ -21,6 +21,7 @@
   "homepage": "https://github.com/lincoln-howard-jr/busboy-gfs-store#readme",
   "dependencies": {
     "busboy": "^0.2.14",
-    "gridfs-stream": "^1.1.1"
+    "gridfs-stream": "^1.1.1",
+    "type-is": "^1.6.15"
   }
 }

@@ -1,5 +1,6 @@
 'use strict'
 // imports
+let is = require ('type-is');
 let Grid = require ('gridfs-stream');
 let Busboy = require ('busboy');
 // need mongoose to export middleware
@@ -11,6 +12,7 @@ module.exports = function (mongoose) {
   let gfs = Grid (mongoose.connection.db);
   // the middleware function itself
   return function (req, res, next) {
+    if (!is (req, ['multipart'])) return next ();
     // create the body object
     // all fields and files will initially be wrapped in arrays
     let body = new Map ();
